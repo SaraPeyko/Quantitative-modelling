@@ -56,7 +56,7 @@ def calculate_portfolio_variance(returns, weights):
 	print("Expected variance:", portfolio_variance)
 
 
-# Monte-Carlo method solves d deterministic problem using probabilistic analog
+# Monte-Carlo method solves deterministic problem using probabilistic analog
 # 1) define a domian of possible inputs
 # 2) generate inputs randomly
 # 3) perform a deterministics computation on the inputs

@@ -40,7 +40,7 @@ def capm(start_date, end_date, ticker1, ticker2):
 	beta = covmat[0,1]/covmat[1,1]
 	print('Beta from the formula:', beta)
 
-	# using linear regression to fit a line to the data [stock-returns, market_returns] - slope is the beta
+	# using linear regression to fit a line to the data [stock_returns, market_returns] - slope is the beta
 	beta, alpha = np.polyfit(data['m_returns'], data['s_returns'], deg=1)
 	print('Beta from regression:', beta)
 
