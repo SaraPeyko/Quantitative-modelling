@@ -51,7 +51,7 @@ def capm(start_date, end_date, ticker1, ticker2):
 	plt.title('Capital Asset Pricing Model, finding alphas and betas')
 	plt.xlabel('Market return $R_m$', fontsize=10)
 	plt.ylabel('Stock return $R_a$')
-	plt.text(0.08, 0.05, r'$R_a = \beta * R_m + \alpha$', fontsize=10)
+	plt.text(0.08, 0.05, r'$R_a = \beta * R_m + \alpha$', fontsize=9)
 	plt.legend()
 	plt.grid()
 	plt.show()
