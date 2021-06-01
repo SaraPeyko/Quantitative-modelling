@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bbed2abc-4fa5-4fa0-b9f3-a957c08caa2e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>VaRMonteCarlo.py</StartupFile>
+    <StartupFile>Backtesting.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Backtesting.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="CapitalAssetPricingModel.py" />
     <Compile Include="DataNormalDistribution.py" />
     <Compile Include="ModernPortfolio.py" />
