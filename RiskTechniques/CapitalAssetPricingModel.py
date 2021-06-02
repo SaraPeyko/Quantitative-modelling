@@ -36,7 +36,7 @@ def capm(start_date, end_date, ticker1, ticker2):
 	covmat = np.cov(data['s_returns'], data['m_returns'])
 	print(covmat)
 
-	# calculating veta according to the formula
+	# calculating beta according to the formula
 	beta = covmat[0,1]/covmat[1,1]
 	print('Beta from the formula:', beta)
 
