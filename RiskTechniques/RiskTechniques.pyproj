@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bbed2abc-4fa5-4fa0-b9f3-a957c08caa2e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Backtesting.py</StartupFile>
+    <StartupFile>CapitalAssetPricingModel.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
