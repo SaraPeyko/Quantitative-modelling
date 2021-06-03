@@ -18,7 +18,7 @@ class OptionPricing:
 
 	def call_option_simulation(self):
 		# we have 2 columns: first column with 0s, second column will store the payoff
-		# we need the first column of 0s: payoff function is max(0,S-E) for call option
+		# we need the first column of 0s: payoff function is max(S-E, 0) for call option
 		option_data = np.zeros([self.iterations, 2])
 
 		# dimensions: 1 dimensional array with as many items as the iterations
@@ -27,7 +27,7 @@ class OptionPricing:
 		# equation for the S(t) stock price
 		stock_price = self.S0*np.exp(self.T*(self.rf - 0.5*self.sigma**2) + self.sigma*np.sqrt(self.T)*rand)
 
-		# we need S-E because we have to calculate the max(S-E,0)
+		# we need S-E because we have to calculate the max(S-E, 0)
 		option_data[:,1] = stock_price - self.E
 
 		# average for the Monte-Carlo method
@@ -39,7 +39,7 @@ class OptionPricing:
 
 	def put_option_simulation(self):
 		# we have 2 columns: first column with 0s, second column will store the payoff
-		# we need the first column of 0s: payoff function is max(0,S-E) for put option
+		# we need the first column of 0s: payoff function is max(E-S, 0) for put option
 		option_data = np.zeros([self.iterations, 2])
 
 		# dimensions: 1 dimensional array with as many items as the iterations
@@ -48,7 +48,7 @@ class OptionPricing:
 		# equation for the S(t) stock price
 		stock_price = self.S0*np.exp(self.T*(self.rf - 0.5*self.sigma**2) + self.sigma*np.sqrt(self.T)*rand)
 
-		# we need S-E because we have to calculate the max(S-E,0)
+		# we need E-S because we have to calculate the max(E-S, 0)
 		option_data[:,1] = self.E - stock_price
 
 		# average for the Monte-Carlo method
