@@ -7,7 +7,7 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "RiskTechniques", "RiskTechn
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "BlackScholes", "BlackScholes\BlackScholes.pyproj", "{485B9246-CE6F-44B7-8A29-FCBE4F0AEE87}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Bonds Theory", "Bonds Theory\Bonds Theory.pyproj", "{9AA07733-2AE4-4E5A-90CD-1C05D0DCB064}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "BondsTheory", "Bonds Theory\BondsTheory.pyproj", "{9AA07733-2AE4-4E5A-90CD-1C05D0DCB064}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
