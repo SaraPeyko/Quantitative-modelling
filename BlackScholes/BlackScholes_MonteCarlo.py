@@ -25,7 +25,7 @@ class OptionPricing:
 		rand = np.random.normal(0, 1, [1, self.iterations])
 
 		# equation for the S(t) stock price
-		stock_price = self.S0*np.exp(self.T*(self.rf - 0.5*self.sigma**2) + self.sigma*np.sqrt(self.T)*rand)
+		stock_price = self.S0*np.exp(self.T*(self.rf - 0.5*self.sigma**2) + self.sigma*np.sqrt(self.T)*rand)				# Stochastic Differential Equation (SDE)
 
 		# we need S-E because we have to calculate the max(S-E, 0)
 		option_data[:,1] = stock_price - self.E
